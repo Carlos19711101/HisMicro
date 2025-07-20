@@ -44,12 +44,13 @@ const styles = StyleSheet.create<Styles>({
     top: 40,
     left: 20,
     zIndex: 10,
+    marginTop: 10,
   },
   entriesList: {
     paddingBottom: 20,
   },
   entryContainer: {
-    backgroundColor: 'rgba(12, 15, 250, 0.9)',
+    backgroundColor: 'rgba(2, 49, 7, 0.23)',
     borderRadius: 10,
     padding: 15,
     marginHorizontal: 15,
@@ -137,7 +138,7 @@ const styles = StyleSheet.create<Styles>({
     fontWeight: 'bold',
     color: 'white',
     marginBottom: 30,
-    marginTop: 30,
+    marginTop: 20,
     right: -10,
   },
     footerContainer: {

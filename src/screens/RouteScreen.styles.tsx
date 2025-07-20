@@ -52,6 +52,7 @@ const styles = StyleSheet.create<Styles>({
     left: 30,
     zIndex: 10,
     padding: 10,
+    marginTop: 15,
   },
   backButtonIcon: {
     marginLeft: 0,
@@ -61,7 +62,7 @@ const styles = StyleSheet.create<Styles>({
     paddingBottom: 20,
   },
   entryContainer: {
-    backgroundColor: 'rgba(12, 15, 250, 0.9)',
+    backgroundColor: 'rgba(2, 49, 7, 0.23)',
     borderRadius: 10,
     padding: 15,
     marginHorizontal: 15,
@@ -142,7 +143,7 @@ const styles = StyleSheet.create<Styles>({
     padding: 2,
   },
   title: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
     marginBottom: 10,

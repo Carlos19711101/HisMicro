@@ -1,15 +1,10 @@
-
-// screens/ProfileScreen.styles.ts
-
-import { StyleSheet, ViewStyle, TextStyle, ImageStyle, Platform, Dimensions, StatusBar } from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle, ImageStyle, Platform, Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 const avatarSize = width * 0.7;
 const editButtonSize = avatarSize * 0.20;
 
-// Interfaz para todos los estilos del componente, ya consolidados.
 interface Styles {
-  // Estilos Principales
   container: ViewStyle;
   contentContainer: ViewStyle;
   header: ViewStyle;
@@ -28,7 +23,6 @@ interface Styles {
   verticalButtonRow: ViewStyle;
   buttonWithResult: ViewStyle;
 
-  // Estilos para el Modal de Selección de Imagen
   imagePickerModalOverlay: ViewStyle;
   imagePickerModalContent: ViewStyle;
   imagePickerModalOption: ViewStyle;
@@ -36,7 +30,6 @@ interface Styles {
   imagePickerModalCancel: ViewStyle;
   imagePickerModalCancelText: TextStyle;
 
-  // Estilos para los Modales de Edición de Texto
   editModalOverlay: ViewStyle;
   editModalContent: ViewStyle;
   editModalTitle: TextStyle;
@@ -46,10 +39,11 @@ interface Styles {
   editModalSaveButtonText: TextStyle;
   editModalCancelButton: ViewStyle;
   editModalCancelButtonText: TextStyle;
+  footerContainer: ViewStyle;
+  footerContent: ViewStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
-  // --- Estilos Principales ---
   container: {
     flex: 1,
   },
@@ -69,7 +63,6 @@ const styles = StyleSheet.create<Styles>({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    // Aplicamos el tamaño aquí para que el contenedor tenga la dimensión correcta para la sombra
     width: avatarSize,
     height: avatarSize,
     borderRadius: avatarSize / 2,
@@ -95,7 +88,6 @@ const styles = StyleSheet.create<Styles>({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#ddd',
-    // Aplicamos tamaño y posición aquí
     width: editButtonSize,
     height: editButtonSize,
     borderRadius: editButtonSize / 2,
@@ -123,7 +115,7 @@ const styles = StyleSheet.create<Styles>({
     paddingHorizontal: width * 0.05,
   },
   editButton: {
-    backgroundColor: '#71e4e9',
+    backgroundColor: 'rgba(138, 250, 9, 0.8)',
     paddingVertical: 10,
     paddingHorizontal: 24,
     borderRadius: 20,
@@ -136,7 +128,7 @@ const styles = StyleSheet.create<Styles>({
     elevation: 3,
   },
   editButtonCompact: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'rgba(137, 250, 9, 0.8)',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 20,
@@ -151,11 +143,11 @@ const styles = StyleSheet.create<Styles>({
   editButtonText: {
     fontWeight: '600',
     fontSize: width * 0.038,
-    color: '#333',
+    color: 'rgba(12, 12, 12, 0.8)',
   },
   centeredInfoContainer: {
     alignItems: 'center',
-    marginTop: 8,
+    marginTop: 1,
     marginBottom: 8,
   },
   resultText: {
@@ -170,11 +162,11 @@ const styles = StyleSheet.create<Styles>({
     fontSize: width * 0.045,
     color: '#fff',
     fontWeight: 'bold',
-    marginLeft: 15,
+    marginLeft: 10,
     alignSelf: 'center',
   },
   verticalButtonRow: {
-    marginTop: 20,
+    marginTop: 1,
     paddingHorizontal: width * 0.05,
   },
   buttonWithResult: {
@@ -183,7 +175,6 @@ const styles = StyleSheet.create<Styles>({
     marginBottom: 15,
   },
 
-  // --- Estilos para el Modal de Selección de Imagen ---
   imagePickerModalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.3)',
@@ -213,7 +204,6 @@ const styles = StyleSheet.create<Styles>({
     color: '#888',
   },
 
-  // --- Estilos para los Modales de Edición de Texto ---
   editModalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.45)',
@@ -275,12 +265,12 @@ const styles = StyleSheet.create<Styles>({
     fontWeight: 'bold',
     fontSize: 16,
   },
-     footerContainer: {
+  footerContainer: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'transparent', // Fondo transparente
+    backgroundColor: 'transparent',
     paddingVertical: 15,
     alignItems: 'center',
     justifyContent: 'center',

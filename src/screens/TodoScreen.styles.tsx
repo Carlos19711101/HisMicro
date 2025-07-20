@@ -35,7 +35,7 @@ const styles = StyleSheet.create<Styles>({
     overflow: 'hidden',
   },
   content: {
-    padding: 20,
+    padding: 5,
     alignItems: 'center',
     width: '100%',
   },
@@ -77,6 +77,7 @@ const styles = StyleSheet.create<Styles>({
     left: 20,
     zIndex: 10,
     padding: 5,
+    marginTop: 15,
   },
   pagination: {
     flexDirection: 'row',

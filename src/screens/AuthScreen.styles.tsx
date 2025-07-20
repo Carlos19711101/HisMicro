@@ -156,13 +156,13 @@ const styles = StyleSheet.create<Styles>({
     paddingHorizontal: 20,
   },
   footerText: {
-    color: 'rgba(235, 238, 236, 0.5)', // Ajusté la opacidad para mejor visibilidad
+    color: 'rgba(14, 15, 14, 0.5)', // Ajusté la opacidad para mejor visibilidad
     fontSize: 12,
     textAlign: 'center',
     opacity: 0.8,
   },
   footer1Text: {
-    color: 'rgba(237, 237, 229, 0.5)', // Ajusté la opacidad para mejor visibilidad
+    color: 'rgba(14, 15, 14, 0.98)', // Ajusté la opacidad para mejor visibilidad
     fontSize: 18,
     textAlign: 'center',
     opacity: 0.8,

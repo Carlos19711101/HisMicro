@@ -167,7 +167,9 @@ const PreventiveScreen = ({ navigation }: any) => {
       />
       
       <LinearGradient
-        colors={['#090FFA', '#0eb9e3', '#58fd03']}
+        colors={['#0b3a01', '#2a9508', '#66f338']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
         style={[styles.container, { 
           paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0 
         }]}
