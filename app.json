@@ -1,30 +1,30 @@
 {
   "expo": {
-    "name": "HisCar",
-    "slug": "historia-vehiculo",
+    "name": "HisMicro",
+    "slug": "historia-vehiculo-pasajeros-micro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "backgroundColor": "transparent",
+    "backgroundColor": "#00000000",
     "splash": {
       "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "transparent"
+      "backgroundColor": "#00000000"
     },
     "plugins": [
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow HisMoto to access your camera",
-          "microphonePermission": "Allow HisMoto to access your microphone",
+          "cameraPermission": "Allow HisMicro to access your camera",
+          "microphonePermission": "Allow HisMicro to access your microphone",
           "recordAudioAndroid": true
         }
       ]
     ],
     "ios": {
       "supportsTablet": true,
-      "backgroundColor": "transparent",
+      "backgroundColor": "#00000000",
       "infoPlist": {
         "NSCameraUsageDescription": "Esta aplicación necesita acceso a la cámara para tomar fotos.",
         "NSMicrophoneUsageDescription": "Esta aplicación necesita acceso al micrófono para grabar audio."
@@ -33,9 +33,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "transparent"
+        "backgroundColor": "#00000000"
       },
-      "package": "com.carlosvelez.hismoto",
+      "package": "com.carlosvelez.hismicro",
       "versionCode": 2,
       "permissions": [
         "android.permission.CAMERA",
@@ -43,7 +43,7 @@
       ],
       "softwareKeyboardLayoutMode": "pan",
       "statusBar": {
-        "backgroundColor": "transparent",
+        "backgroundColor": "#00000000",
         "translucent": true
       }
     },
